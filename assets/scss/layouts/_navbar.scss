@@ -1,0 +1,44 @@
+@import url(../abstracts/_mixins.scss);
+
+.navbar {
+
+    .nav-link {
+        i {
+           font-size: 50px;
+           color: $color-black;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .navbar-brand {
+            max-width: 150px;
+        }
+
+        &.navbar-expand{
+            .navbar-nav {
+                .nav-link {
+                    padding-right: 0;
+                    img {
+                        width: 80%;
+                        min-width: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .dropdown {
+        .dropdown-toggle {
+            @include font-style(30px, 500, $color-black);
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
+
+            &::after {
+                vertical-align: 0.1em;
+            }
+        }
+    }
+ 
+}
