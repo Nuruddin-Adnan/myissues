@@ -8,7 +8,7 @@
 
     ul {
         li {
-            @include font-style(16px, 600, #006f85);
+            @include font-style(16px, 600, $color-cyan);
             margin: 0.3rem;
 
             @media (min-width: 768px){
@@ -18,12 +18,12 @@
             &.vr {
                 width: 2px;
                 opacity: 1;
-                background: #006f85;
+                background: $color-cyan;
             }
 
             &:first-child {
                 color: $color-white;
-                background: #006f85;
+                background: $color-cyan;
                 cursor: default;
                 border-radius: 10px;
                 text-transform: uppercase;
