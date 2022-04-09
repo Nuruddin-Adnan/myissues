@@ -1,0 +1,12 @@
+@import url(../abstracts/_mixins.scss);
+
+.section-title-cyan {
+    @include font-style(20px, 600, $color-cyan);
+    @media (min-width: 768px){
+        font-size: 30px;
+    }
+}
+
+.bg-light-gray {
+    background-color: #f5f9fa;
+}
