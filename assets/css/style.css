@@ -14,6 +14,7 @@
 @import url(../abstracts/_mixins.scss);
 @import url(../abstracts/_mixins.scss);
 @import url(../abstracts/_mixins.scss);
+@import url(../abstracts/_mixins.scss);
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +62,14 @@ body {
 
 .bg-light-gray {
   background-color: #f5f9fa;
+}
+
+.border-radius-0 {
+  border-radius: 0;
+}
+
+.text-cyan {
+  color: #006f85;
 }
 
 /*===// end of base css === */
@@ -838,23 +847,27 @@ body {
 }
 
 .top-pagination .pagination .page-item:nth-child(1) {
-  z-index: 5;
+  z-index: 6;
   margin-left: 0;
 }
 
 .top-pagination .pagination .page-item:nth-child(2) {
-  z-index: 4;
+  z-index: 5;
 }
 
 .top-pagination .pagination .page-item:nth-child(3) {
-  z-index: 3;
+  z-index: 4;
 }
 
 .top-pagination .pagination .page-item:nth-child(4) {
-  z-index: 2;
+  z-index: 3;
 }
 
 .top-pagination .pagination .page-item:nth-child(5) {
+  z-index: 2;
+}
+
+.top-pagination .pagination .page-item:nth-child(6) {
   z-index: 1;
 }
 
@@ -961,6 +974,87 @@ body {
           transform: scale(1.05);
   -webkit-filter: blur(1px);
           filter: blur(1px);
+}
+
+.seleted-category .card {
+  -webkit-box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
+}
+
+.seleted-category .card .selected-category-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .seleted-category .card .selected-category-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.seleted-category .card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #61605c;
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .seleted-category .card h2 {
+    font-size: 20px;
+  }
+}
+
+.seleted-category .card i {
+  color: #6ebf31;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.selete-area li {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  position: relative;
+}
+
+.selete-area li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #acacac;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .selete-area li a {
+    font-size: 20px;
+    padding: 0.5rem 0;
+  }
+}
+
+.selete-area li a .badge {
+  background: #acacac;
+}
+
+.selete-area li:hover {
+  background-color: #006f85;
+}
+
+.selete-area li:hover a {
+  color: #fff;
+}
+
+.selete-area li:hover a .badge {
+  background: #fff;
+  color: #006f85;
+}
+
+.selete-area li:first-child {
+  background-color: #fff;
 }
 
 /*===// end of components css === */
