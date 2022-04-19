@@ -12,6 +12,12 @@
 /*===// end of base css === */
 
 
+/*=== layouts css start === */
+@import 'layouts/navbar';
+@import 'layouts/footer';
+/*===// end of layouts css === */
+
+
 /*=== components css start === */
 @import 'components/filter';
 @import 'components/sponsore';
@@ -20,18 +26,12 @@
 @import 'components/top-action';
 @import 'components/organizer-location';
 @import 'components/post-details';
+@import 'components/top-pagination';
+@import 'components/select-category';
 /*===// end of components css === */
-
-
-/*=== layouts css start === */
-@import 'layouts/navbar';
-@import 'layouts/footer';
-/*===// end of layouts css === */
 
 
 
 /*=== pages start === */
 
 /*===// end of pages  === */
-
-
