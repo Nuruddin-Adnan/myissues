@@ -15,6 +15,7 @@
 @import url(../abstracts/_mixins.scss);
 @import url(../abstracts/_mixins.scss);
 @import url(../abstracts/_mixins.scss);
+@import url(../abstracts/_mixins.scss);
 * {
   margin: 0;
   padding: 0;
@@ -226,6 +227,16 @@ body {
 
 /*===// end of layouts css === */
 /*=== components css start === */
+.btn-cyan {
+  background-color: #006f85;
+  color: #fff;
+}
+
+.btn-cyan:hover {
+  background-color: #005a6c;
+  color: #fff;
+}
+
 .filter {
   background: #f5f9fa;
   padding: 1rem 0;
@@ -1055,6 +1066,124 @@ body {
 
 .selete-area li:first-child {
   background-color: #fff;
+}
+
+.create-add-form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #006f85;
+  margin-bottom: 5x;
+}
+
+.create-add-form label .label-indication {
+  font-size: 12px;
+  font-weight: 400;
+  color: #b7b8b3;
+}
+
+.create-add-form .form-control {
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcd7;
+  -webkit-box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
+}
+
+.create-add-form .form-control::-webkit-input-placeholder {
+  color: #aaaca8;
+}
+
+.create-add-form .form-control:-ms-input-placeholder {
+  color: #aaaca8;
+}
+
+.create-add-form .form-control::-ms-input-placeholder {
+  color: #aaaca8;
+}
+
+.create-add-form .form-control::placeholder {
+  color: #aaaca8;
+}
+
+.create-add-form .error-message {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #fe8358;
+  border: 1px solid #b7b8b3;
+  border-radius: 3px;
+  padding: 2px 10px;
+  margin-top: 10px;
+}
+
+.create-add-form .error-message i {
+  padding-right: 10px;
+}
+
+.create-add-form .next-prev-btn .btn {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.create-add-form .next-prev-btn .btn.btn-next {
+  background-color: #006f85;
+  border: 2px solid #006f85;
+}
+
+.create-add-form .next-prev-btn .btn.btn-prev {
+  background-color: #efefeb;
+  border: 2px solid #b7b8b3;
+  color: #7d7d7d;
+}
+
+.create-add-form .next-prev-btn .error-message-btn {
+  background-color: #c85128;
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 10px);
+}
+
+.create-add-form .next-prev-btn .error-message-btn::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top: 15px solid #c85128;
+  border-bottom: 0;
+  position: absolute;
+  top: 100%;
+  right: 50px;
+}
+
+.create-add-form .ck-editor__editable {
+  min-height: 250px;
+}
+
+.create-add-form .ck-editor {
+  -webkit-box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
+}
+
+@media (min-width: 768px) {
+  .create-add-form label {
+    font-size: 24px;
+  }
+  .create-add-form label .label-indication {
+    font-size: 18px;
+  }
+  .create-add-form .form-control {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .create-add-form .error-message {
+    font-size: 18px;
+  }
+  .create-add-form .next-prev-btn .btn {
+    font-size: 55px;
+  }
 }
 
 /*===// end of components css === */

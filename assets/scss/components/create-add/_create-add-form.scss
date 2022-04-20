@@ -1,0 +1,105 @@
+@import url(../abstracts/_mixins.scss);
+
+.create-add-form{
+
+    label{
+        @include font-style(16px, 600, $color-cyan);
+        margin-bottom: 5x;
+        .label-indication{
+            @include font-style(12px, 400, #b7b8b3);
+        }
+    }
+    
+    .form-control {
+        font-size: 13px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #dbdcd7;
+        box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
+        &::placeholder {
+            color: #aaaca8;
+        }
+    }
+
+    .error-message {
+        @include font-style(12px, 500, $color-white);
+        background-color: #fe8358;
+        border: 1px solid #b7b8b3;
+        border-radius: 3px;
+        padding: 2px 10px;
+        margin-top: 10px;
+        i {
+            padding-right: 10px;
+        }
+    }
+
+    .next-prev-btn {
+        .btn {
+            @include font-style(36px, 700, $color-white);
+            white-space: nowrap;
+            &.btn-next {
+                background-color: $color-cyan;
+                border: 2px solid $color-cyan;
+            }
+            &.btn-prev {
+                background-color: #efefeb;
+                border: 2px solid #b7b8b3;
+                color: #7d7d7d;
+            }
+        }
+
+        .error-message-btn {
+            background-color: #c85128;
+            position: absolute;
+            right: 0;
+            bottom: calc(100% + 10px);
+            &::after {
+                content: '';
+                width: 0;
+                height: 0;
+                border: 15px solid transparent;
+                border-top: 15px solid #c85128;
+                border-bottom: 0;
+                position: absolute;
+                top: 100%;
+                right: 50px;
+            }
+
+        }
+    }    
+
+
+
+    // ck-editor
+    .ck-editor__editable {
+        min-height: 250px;
+    }
+    .ck-editor {
+        box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
+    }
+
+
+    //############# tablet mode css  #############//
+    @media(min-width: 768px){
+        label{
+            font-size: 24px;
+            .label-indication{
+                font-size: 18px;
+            }
+        }
+        .form-control {
+            font-size: 20px;
+            padding: 15px;
+        }
+        .error-message {
+            font-size: 18px;
+        }
+        .next-prev-btn {
+            .btn {
+                font-size: 55px;
+            }
+        }
+    
+    }
+}
+  

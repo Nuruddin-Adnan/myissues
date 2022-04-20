@@ -1,0 +1,9 @@
+.btn-cyan {
+   background-color: $color-cyan;
+   color: $color-white;
+
+   &:hover {
+      background-color: darken($color-cyan, 5);
+      color: $color-white;
+   }
+}
