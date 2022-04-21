@@ -1081,6 +1081,7 @@ body {
   color: #b7b8b3;
 }
 
+.create-add-form .form-select,
 .create-add-form .form-control {
   font-size: 13px;
   padding: 10px;
@@ -1090,18 +1091,22 @@ body {
           box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
 }
 
+.create-add-form .form-select::-webkit-input-placeholder,
 .create-add-form .form-control::-webkit-input-placeholder {
   color: #aaaca8;
 }
 
+.create-add-form .form-select:-ms-input-placeholder,
 .create-add-form .form-control:-ms-input-placeholder {
   color: #aaaca8;
 }
 
+.create-add-form .form-select::-ms-input-placeholder,
 .create-add-form .form-control::-ms-input-placeholder {
   color: #aaaca8;
 }
 
+.create-add-form .form-select::placeholder,
 .create-add-form .form-control::placeholder {
   color: #aaaca8;
 }
@@ -1141,6 +1146,7 @@ body {
 
 .create-add-form .next-prev-btn .error-message-btn {
   background-color: #c85128;
+  padding: 5px 10px;
   position: absolute;
   right: 0;
   bottom: calc(100% + 10px);
@@ -1158,6 +1164,47 @@ body {
   right: 50px;
 }
 
+.create-add-form--heading-1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #585757;
+}
+
+.create-add-form--heading-2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #585757;
+}
+
+.create-add-form--description-muted {
+  font-size: 12px;
+  font-weight: 400;
+  color: #585757;
+}
+
+.create-add-form .badge-muted {
+  background: #b7b8b3;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 0;
+}
+
+.create-add-form .range-result {
+  background: #f0f0f0;
+  border: 1px solid #b7b8b3;
+  font-size: 10px;
+  font-weight: 400;
+  color: #666762;
+  border-radius: 6px;
+  padding: 7.5px 10px;
+  margin-left: -1px;
+  white-space: nowrap;
+}
+
 .create-add-form .ck-editor__editable {
   min-height: 250px;
 }
@@ -1167,6 +1214,25 @@ body {
           box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
 }
 
+.create-add-form #myRange {
+  height: 15px;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #b7b8b3;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-appearance: none;
+}
+
+.create-add-form input[type='range']::-webkit-slider-thumb {
+  width: 15px;
+  height: 40px;
+  -webkit-appearance: none;
+  background: #f0f0f0;
+  border: 1px solid #b7b8b3;
+  border-radius: 4px;
+}
+
 @media (min-width: 768px) {
   .create-add-form label {
     font-size: 24px;
@@ -1174,6 +1240,7 @@ body {
   .create-add-form label .label-indication {
     font-size: 18px;
   }
+  .create-add-form .form-select,
   .create-add-form .form-control {
     font-size: 20px;
     padding: 15px;
@@ -1183,6 +1250,28 @@ body {
   }
   .create-add-form .next-prev-btn .btn {
     font-size: 55px;
+  }
+  .create-add-form--heading-1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #585757;
+  }
+  .create-add-form--heading-2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #585757;
+  }
+  .create-add-form--description-muted {
+    font-size: 20px;
+    font-weight: 400;
+    color: #585757;
+  }
+  .create-add-form .badge-muted {
+    font-size: 16px;
+  }
+  .create-add-form .range-result {
+    font-size: 15px;
+    padding: 10px 15px;
   }
 }
 

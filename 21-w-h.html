@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>myissues 20-w-h</title>
+  <title>myissues 21-w-h</title>
   <link rel='shortcut icon' href='assets/images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -54,8 +54,8 @@
     <div class="container-fluid">
       <ul class="pagination align-items-center">
         <li class="page-item"><a class="page-link" href="#"><span>1</span></a></li>
-        <li class="page-item active"><a class="page-link" href="#"><span>2</span></a></li>
-        <li class="page-item"><a class="page-link" href="#"><span>3</span></a></li>
+        <li class="page-item"><a class="page-link" href="#"><span>2</span></a></li>
+        <li class="page-item active"><a class="page-link" href="#"><span>3</span></a></li>
         <li class="page-item"><a class="page-link" href="#"><span>4</span></a></li>
         <li class="page-item"><a class="page-link" href="#"><span>5</span></a></li>
         <li class="page-item"><a class="page-link" href="#"><span>6</span></a></li>
@@ -71,35 +71,135 @@
   <section class="create-add mb-md-5 mb-4">
     <div class="container-fluid">
       <form class="create-add-form">
-        <div class="row gy-md-4 gy-3">
+        <h3 class="create-add-form--heading-2 mt-md-5 mt-4">Any information provided below is used by myissues Inc.</h3>
+        <p class="create-add-form--description-muted mt-2">This will be use for verification for cash and food delivery items. The information must be correct in order to collect any donations make to on this website.</p>
+        <div class="row gy-md-4 gy-3 mt-4">
           <div class="col-12">
-            <label class="d-flex justify-content-between">Advertisement Title <span class="label-indication">60 characters left</span></label>
-            <input type="text" class="form-control">
-            <p class="error-message"><i class="fas fa-exclamation-triangle"></i> Please fill in "Title" field. Allowed length is 10 - 60</p>
+            <label class="d-flex justify-content-between">First Name</label>
+            <input type="text" class="form-control" placeholder="First Name">
           </div>
           <div class="col-12">
-            <label class="d-flex justify-content-between">Name <span class="label-indication">25 characters left</span></label>
-            <input type="text" class="form-control">
-            <p class="error-message"><i class="fas fa-exclamation-triangle"></i> Please fill in "Title" field. Allowed length is 2 - 25</p>
+            <label class="d-flex justify-content-between">Last Name</label>
+            <input type="text" class="form-control" placeholder="Last Name">
           </div>
-          <div class="col-md-3 col-4 ms-auto">
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Address</label>
+            <input type="text" class="form-control" placeholder="Address">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">City</label>
+            <select class="form-select">
+              <option>City</option>
+              <option>City 2</option>
+              <option>City 3</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Province</label>
+            <select class="form-select">
+              <option>Select Province</option>
+              <option>Province 2</option>
+              <option>Province 3</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Postal Code</label>
+            <input type="text" class="form-control" placeholder="Postal Code">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Date Of Birth</label>
+            <input type="date" class="form-control" >
+          </div>
+          <div class="col-12">
             <label class="d-flex justify-content-between">Age</label>
-            <input type="text" class="form-control">
-            <p class="error-message"><i class="fas fa-exclamation-triangle"></i> Min age is 18</p>
+            <input type="text" class="form-control" placeholder="1">
           </div>
           <div class="col-12">
-            <label class="d-flex justify-content-between">Tagline<span class="label-indication">60 characters left</span></label>
-            <input type="text" class="form-control" placeholder="Describe your best attribute in a short and catchy way">
-            <p class="error-message"><i class="fas fa-exclamation-triangle"></i> Please fill in "Title" field. Allowed length is 10 - 60</p>
+            <label class="d-flex justify-content-between">Contact Number</label>
+            <input type="text" class="form-control" placeholder="Tel">
           </div>
           <div class="col-12">
-            <label class="d-flex justify-content-between">Description<span class="label-indication">1000 characters left</span></label>
-            <div id="editor"></div>
-            <p class="error-message mb-5"><i class="fas fa-exclamation-triangle"></i>Please enter ad description, This field is mandatory </p>
+            <label class="d-flex justify-content-between">Email</label>
+            <input type="text" class="form-control" placeholder="sunday2470@gmail.com">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Emergancy Contact Name</label>
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Emergancy Contact Number</label>
+            <input type="text" class="form-control" placeholder="Tel">
           </div>
         </div>
+
+        <h3 class="create-add-form--heading-2 mt-md-5 mt-4">Note:</h3>
+        <p class="create-add-form--description-muted mb-md-5 mb-4">Provide Us with someone in the community that can verify that you're in crisis and need help. This person must work in the community in any capacity.</p>
+
+        <h2 class="create-add-form--heading-1 mb-md-5 mb-4 pt-3">Referance 1</h2>
+        <div class="row gy-md-4 gy-3">
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Name</label>
+            <input type="text" class="form-control" placeholder="Name*">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Tel</label>
+            <input type="text" class="form-control" placeholder="Tel*">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Ext.</label>
+            <input type="text" class="form-control" placeholder="Ext*">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Occupation</label>
+            <input type="text" class="form-control" placeholder="Occupation*">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Organization Name</label>
+            <input type="text" class="form-control" placeholder="Organization Name*">
+          </div>
+        </div>
+
+        <h2 class="create-add-form--heading-1 my-md-5 my-4 pt-3">Referance 2</h2>
+        <div class="row gy-md-4 gy-3">
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Name</label>
+            <input type="text" class="form-control" placeholder="Name*">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Tel</label>
+            <input type="text" class="form-control" placeholder="Tel*">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Ext.</label>
+            <input type="text" class="form-control" placeholder="Ext*">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Occupation</label>
+            <input type="text" class="form-control" placeholder="Occupation*">
+          </div>
+          <div class="col-12">
+            <label class="d-flex justify-content-between">Organization Name</label>
+            <input type="text" class="form-control" placeholder="Organization Name*">
+          </div>
+        </div>
+
+        <label class="d-flex justify-content-between mt-md-5 mt-4">Outcall Range <div class="badge badge-muted">Optional</div></label>
+        <h2 class="create-add-form--heading-2 my-3"><i class="fas fa-info-circle text-cyan"></i> Click on the map below to select your location</h2>
+        <input type="text" class="form-control" placeholder="Or enter the first 3 digits of your postal code">
+
+        <h2 class="create-add-form--heading-2 mt-md-5 mt-4">How far you are willing to travel from your location</h2>
+        <div class="d-flex align-items-center my-3">
+          <input type="range" class="w-100" id="myRange" value="2" min="0" max="100">
+          <div class="range-result"><span id="range-value">2</span> Km</div>
+        </div>
+
+        <h2 class="create-add-form--heading-2  mt-md-5 mt-4 mb-3">For your privacy. please only provide your approximate location. </h2>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d323177.45933432836!2d-120.2987295!3d50.741754949999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2cd33d0d3b31%3A0xd23e96aa9a6945e7!2sKamloops%2C%20BC%2C%20Canada!5e0!3m2!1sen!2sbd!4v1649180663678!5m2!1sen!2sbd" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
         <div class="next-prev-btn d-flex align-items-center mt-md-5 mt-4 position-relative">
-          <p class="error-message error-message-btn"><i class="fas fa-exclamation-triangle"></i>Wait, you still have some fields to fill in or correct</p>
           <a href="#" class="btn btn-prev px-md-4 px-3"><i class="far fa-angle-left"></i></a>
           <a href="#" class="btn btn-next w-100 ms-2">Next Step <i class="far fa-angle-right ps-md-4"></i></a>
         </div>
@@ -107,6 +207,7 @@
     </div>
   </section>
   <!-- ===//end of create-add section === -->
+
 
 
 
@@ -380,11 +481,18 @@
   <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
-    ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
-</script>
+    const slider = document.getElementById("myRange")
+    const output = document.getElementById("range-value")
+    const min = slider.min
+    const max = slider.max
+    const value = slider.value
+
+    slider.style.background = `linear-gradient(to right, #006f85 0%, #006f85 ${(value-min)/(max-min)*100}%, #fff ${(value-min)/(max-min)*100}%, #fff 100%)`
+
+    slider.oninput = function() {
+      this.style.background = `linear-gradient(to right, #006f85 0%, #006f85 ${(this.value-this.min)/(this.max-this.min)*100}%, #fff ${(this.value-this.min)/(this.max-this.min)*100}%, #fff 100%)`;
+      output.innerHTML = this.value;
+    };
+  </script>
 </body>
 </html>
