@@ -1,0 +1,78 @@
+@import url(../abstracts/_mixins.scss);
+
+.add-setting{
+    .bg-pink{background: #b367c9;}
+    .bg-gray{background: #4d493c;}
+    .bg-green{background: #76bd5d;}
+    .bg-blue{background: #59a8ea;}
+
+    &--card{
+        border-top: 1px solid #dbdcd7;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.09);
+
+        .card-header{
+            .icon{
+                width: 20px;
+                @media (min-width: 768px){
+                    width: 30px;
+                }
+            }
+            .card-header-title{
+                @include font-style(19px, 600, $color-white);
+                @media (min-width: 768px){
+                    font-size: 30px;
+                }
+                .badge{
+                    border-radius: 0;
+                    background: #fff296;
+                    @include font-style(13px, 500, #5e5f5b);
+                    @media (min-width: 768px){
+                        font-size: 20px;
+                    }
+                }
+            }
+            .card-header-sub-title{
+                @include font-style(13px, 400, $color-white);
+                @media (min-width: 768px){
+                    font-size: 20px;
+                }
+
+                strong{
+                    font-size: 14px;
+                    font-weight: 700;
+                    @media (min-width: 768px){
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+        .card-body{
+            .close-description{
+                @include font-style(12px, 400, #5e5f5b);
+                @media (min-width: 768px){
+                    font-size: 16px;
+                }
+
+                strong{
+                    font-size: 14px;
+                    @media (min-width: 768px){
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .add-setting-details-btn{
+                @include font-style(13px, 600, $color-white);
+                border-radius: 7px;
+                white-space: nowrap;
+                @media (min-width: 768px){
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}
+  

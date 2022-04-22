@@ -1,0 +1,30 @@
+@import url(../abstracts/_mixins.scss);
+
+.add-media{
+    .add-media-card{
+        background: $color-cyan;
+        border-radius: 5px;
+        text-align: center;
+        padding: 1rem 0.3rem;
+        height: 100%;
+
+        .heading{
+            @include font-style(18px, 500, $color-white);
+            @media (min-width: 768px){
+               font-size: 30px;
+            }
+            @media (max-width: 475px){
+               font-size: 14px;
+            }
+        }
+        .item-left{
+            @include font-style(14px, 400, $color-white);
+            @media (min-width: 768px){
+               font-size: 20px;
+            }
+            @media (max-width: 475px){
+                font-size: 12px;
+            }
+        }
+    }
+}

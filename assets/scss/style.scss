@@ -30,8 +30,18 @@
 @import 'components/top-pagination';
 @import 'components/select-category';
 @import 'components/selete-area';
+@import 'components/price-list';
+@import 'components/add-media';
 
+// create add
 @import 'components/create-add/create-add-form';
+@import 'components/create-add/create-add-summary';
+@import 'components/create-add/next-prev-btn';
+@import 'components/create-add/add-tip';
+
+// add setting
+@import 'components/add-setting';
+
 /*===// end of components css === */
 
 
