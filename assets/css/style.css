@@ -1840,6 +1840,111 @@ body {
   }
 }
 
+.add-setting--card.main-page .day-select {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100px;
+  height: 100%;
+  background: #fafbf6;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  border-top-width: 5px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.main-page .day-select {
+    min-height: 150px;
+  }
+}
+
+.add-setting--card.main-page .day-select.remove-btn {
+  border-color: #006f85;
+  border-top-width: 1px;
+  border-bottom-width: 5px;
+  -webkit-box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.2);
+}
+
+.add-setting--card.main-page .day-select i,
+.add-setting--card.main-page .day-select .day,
+.add-setting--card.main-page .day-select .price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #73726f;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.main-page .day-select i,
+  .add-setting--card.main-page .day-select .day,
+  .add-setting--card.main-page .day-select .price {
+    font-size: 22px;
+  }
+}
+
+.add-setting--card.page-1 .page-1-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4d493c;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.page-1 .page-1-title {
+    font-size: 20px;
+  }
+}
+
+.add-setting--card.page-1 .item-select {
+  padding: 10px 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.13);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #898b83;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.page-1 .item-select {
+    font-size: 20px;
+    padding: 15px 20px;
+  }
+}
+
+.add-setting--card.page-1 .item-select.active {
+  color: #006f85;
+}
+
+.Rounded_Rectangle_7 {
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.13);
+  position: absolute;
+  left: 303px;
+  top: 686px;
+  width: 42px;
+  height: 38px;
+  z-index: 128;
+}
+
 /*===// end of components css === */
 /*=== pages start === */
 /*===// end of pages  === */

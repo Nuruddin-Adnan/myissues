@@ -1,10 +1,13 @@
 @import url(../abstracts/_mixins.scss);
 
+
+
 .add-setting{
     .bg-pink{background: #b367c9;}
     .bg-gray{background: #4d493c;}
     .bg-green{background: #76bd5d;}
     .bg-blue{background: #59a8ea;}
+
 
     &--card{
         border-top: 1px solid #dbdcd7;
@@ -73,6 +76,79 @@
                 }
             }
         }
+
+        //############# main page start #############
+        &.main-page {
+            .day-select {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100px;
+                @include widget-box;
+                @media (min-width: 768px){
+                    min-height: 150px;
+                }
+
+                &.remove-btn{
+                    border-color: $color-cyan;
+                    border-top-width: 1px;
+                    border-bottom-width: 5px;
+                    box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.2);
+                }
+
+                i,
+                .day,
+                .price{
+                    @include font-style(16px, 600, #73726f);
+                    @media (min-width: 768px){
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        //############# End of main page #############
+
+
+         //############# page-1 start #############
+         &.page-1{
+             .page-1-title{
+                @include font-style(14px, 500, #4d493c);
+                @media (min-width: 768px){
+                    font-size: 20px;
+                }
+             }
+             .item-select{
+                 padding: 10px 10px;
+                 border-radius: 5px;
+                 box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.13);
+                 display: grid;
+                 place-items: center;
+                 @include font-style(13px, 600, #898b83);
+                 @media (min-width: 768px){
+                     font-size: 20px;
+                     padding: 15px 20px;
+                 }
+
+                 &.active {
+                     color: $color-cyan;
+                 }
+             }
+         }
+        //############# End of page-1 #############
     }
 }
+
+.Rounded_Rectangle_7 {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.13);
+    position: absolute;
+    left: 303px;
+    top: 686px;
+    width: 42px;
+    height: 38px;
+    z-index: 128;
+  }
   
