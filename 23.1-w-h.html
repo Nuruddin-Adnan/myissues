@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>myissues 23-w-h</title>
+  <title>myissues 23.1-w-h</title>
   <link rel='shortcut icon' href='assets/images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -70,7 +70,7 @@
   <section class="add-media mb-md-4 mb-3">
     <div class="container-fluid">
       <div class="row gx-md-3 gx-2 mb-md-4 mb-3">
-        <div class="col-4">
+        <div class="col-6">
           <a href="#" data-bs-toggle="modal" data-bs-target="#add-media-picture">
             <div class="add-media-card">
               <h2 class="heading"><i class="fas fa-images"></i> Add Picture</h2>
@@ -78,14 +78,7 @@
             </div>
           </a>
         </div>
-        <div class="col-4">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#add-profile-picture">
-            <div class="add-media-card">
-              <h2 class="heading"><i class="fas fa-user"></i> Profile ID Photo</h2>
-            </div>
-          </a>
-        </div>
-        <div class="col-4">
+        <div class="col-6">
           <a href="#" data-bs-toggle="modal" data-bs-target="#add-video">
             <div class="add-media-card">
               <h2 class="heading"><i class="fas fa-video"></i> Add Video</h2>
@@ -94,6 +87,39 @@
           </a>
         </div>
       </div>
+
+      <ul class="list-group list-group-flush add-media-list py-md-4 py-3">
+        <li class="list-group-item d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-bars"></i>
+            <div class="flex-shrink-0 px-md-4 px-3">
+              <img src="assets/images/categories/Struggling Students.png" alt="add picture" class="img-fluid media-list-img">
+            </div>
+            <h3 class="text">Pic 1/3</h3>
+          </div>
+          <a href="#" class="action-btn"><i class="fas fa-minus-circle"></i></a>
+        </li>
+        <li class="list-group-item d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-bars"></i>
+            <div class="flex-shrink-0 px-md-4 px-3">
+              <img src="assets/images/categories/Struggling Students.png" alt="add picture" class="img-fluid media-list-img">
+            </div>
+            <h3 class="text">Pic 2/3</h3>
+          </div>
+          <a href="#" class="action-btn"><i class="fas fa-minus-circle"></i></a>
+        </li>
+        <li class="list-group-item d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-bars"></i>
+            <div class="flex-shrink-0 px-md-4 px-3">
+              <img src="assets/images/categories/Struggling Students.png" alt="add picture" class="img-fluid media-list-img">
+            </div>
+            <h3 class="text">Pic 3/3</h3>
+          </div>
+          <a href="#" class="action-btn"><i class="fas fa-minus-circle"></i></a>
+        </li>
+      </ul>
     </div>
   </section>
   <!-- ===//end of add-media section === -->
@@ -161,35 +187,6 @@
     </div>
   </div>
 
-
-  <!-- Modal add-profile-picture -->
-  <div class="modal fade add-media-modal" id="add-profile-picture" tabindex="-1" aria-labelledby="add-profile-pictureLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <form>
-        <div class="modal-content">
-          <div class="modal-header p-md-4 pb-0 border-bottom-0">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body px-md-4 pt-0 mb-4">
-            <h5 class="add-picture-heading mb-4">Two pics no head or face covering</h5>
-            <div class="row g-md-4 g-3">
-              <div class="col position-relative">
-                <input type="file" id="add-picture-input-file" class="form-control d-none">
-                <label for="add-picture-input-file" class="add-picture-input-label py-5"><i class="fas fa-plus-circle"></i>Add</label>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer p-md-4 border-top-0 justify-content-center">
-            <div class="next-prev-btn py-3 d-flex align-items-center position-relative w-100">
-              <button type="submit" class="btn btn-next w-100">Use Selected Pics <i class="far fa-angle-right ps-md-4"></i></button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-
-
   <!-- Modal add-video -->
   <div class="modal fade add-media-modal" id="add-video" tabindex="-1" aria-labelledby="add-videoLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -210,20 +207,6 @@
     </div>
   </div>
 
-
-
-  <!-- === add-tip section start === -->
-  <section class="add-tip mb-md-5 mb-4">
-    <div class="container-fluid">
-      <div class="add-tip-card p-md-4 p-3">
-          <h2 class="add-tip-heading-2 mb-3"><i class="fas fa-info-circle"></i> Top tip for a successful advertisement </h2>
-          <p class="add-tip-description">It's obvious that adding a good photo will increase your ad's 
-            potential for success, but it's equally important to have a good number of photos, especially from different angles, perspectives, 
-            and locations. Experiment. </p>
-      </div>
-    </div>
-  </section>
-  <!-- ===//end of add-tip section === -->
 
   
     

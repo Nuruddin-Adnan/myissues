@@ -27,4 +27,33 @@
             }
         }
     }
+
+    .add-media-list{
+        .list-group-item{
+            background-color: transparent;
+            i{
+                font-size: 26px;
+                color: #cbccc8;
+                @media (min-width: 768px){
+                   font-size: 40px;
+                }
+            }
+            .media-list-img{
+                width: 70px;
+                height: 70px;
+                border-radius: 5px;
+                object-fit: cover;
+                @media (min-width: 768px){
+                    width: 110px;
+                    height: 110px;
+                 }
+            }
+            .text{
+                @include font-style(18px, 600, #363434);
+                @media (min-width: 768px){
+                   font-size: 28px;
+                }
+            }
+        }
+    }
 }

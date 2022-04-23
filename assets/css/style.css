@@ -20,6 +20,7 @@
 @import url(../abstracts/_mixins.scss);
 @import url(../abstracts/_mixins.scss);
 @import url(../abstracts/_mixins.scss);
+@import url(../abstracts/_mixins.scss);
 * {
   margin: 0;
   padding: 0;
@@ -1213,6 +1214,201 @@ body {
 @media (max-width: 475px) {
   .add-media .add-media-card .item-left {
     font-size: 12px;
+  }
+}
+
+.add-media .add-media-list .list-group-item {
+  background-color: transparent;
+}
+
+.add-media .add-media-list .list-group-item i {
+  font-size: 26px;
+  color: #cbccc8;
+}
+
+@media (min-width: 768px) {
+  .add-media .add-media-list .list-group-item i {
+    font-size: 40px;
+  }
+}
+
+.add-media .add-media-list .list-group-item .media-list-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .add-media .add-media-list .list-group-item .media-list-img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.add-media .add-media-list .list-group-item .text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #363434;
+}
+
+@media (min-width: 768px) {
+  .add-media .add-media-list .list-group-item .text {
+    font-size: 28px;
+  }
+}
+
+.add-media-modal .modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.add-media-modal .add-picture-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3c3738;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .add-media-modal .add-picture-heading {
+    font-size: 30px;
+  }
+}
+
+.add-media-modal .add-video-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #006f85;
+}
+
+@media (min-width: 768px) {
+  .add-media-modal .add-video-heading {
+    font-size: 24px;
+  }
+}
+
+.add-media-modal .add-media-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.add-media-modal .form-check-input {
+  width: 20px;
+  height: 20px;
+  background-color: #7f7f7f;
+  border: 1px solid #f1f1f1;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 0;
+  top: 10px;
+  right: calc(10px + 0.5rem);
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .add-media-modal .form-check-input {
+    width: 30px;
+    height: 30px;
+    right: calc(10px + .75rem);
+  }
+}
+
+@media (max-width: 375px) {
+  .add-media-modal .form-check-input {
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    right: calc(5px + .75rem);
+  }
+}
+
+.add-media-modal .form-check-input:checked {
+  background-color: #0d793f;
+  border-color: #0d793f;
+}
+
+.add-media-modal .add-picture-input-label {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f1f1f1;
+  border: 1px solid #7f7f7f;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #7f7f7f;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .add-media-modal .add-picture-input-label {
+    font-size: 24px;
+  }
+}
+
+.add-media-modal .add-picture-input-label i {
+  display: block;
+}
+
+.add-media-modal .divider-line {
+  font-size: 15px;
+  font-weight: 600;
+  color: #7f7f7f;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .add-media-modal .divider-line {
+    font-size: 24px;
+  }
+}
+
+.add-media-modal .divider-line::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #7f7f7f;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+}
+
+.add-media-modal .modal-footer {
+  background-color: #f1f1f1;
+}
+
+.add-media-modal .modal-footer .btn {
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .add-media-modal .modal-footer .btn {
+    font-size: 36px;
   }
 }
 
