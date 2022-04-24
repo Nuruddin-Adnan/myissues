@@ -137,18 +137,210 @@
              }
          }
         //############# End of page-1 #############
+
+
+
+        
+        //############# auto-repost start #############
+        &.auto-repost {
+            .top-heading {
+                @include font-style(14px, 500, #4d493c);
+                line-height: 19px;
+                background: rgba(#76bd5d, 0.2);
+                .text-green{
+                    color: #76bd5d;
+                    font-weight: 600;
+                }
+                @media (min-width: 768px){
+                    font-size: 20px;
+                }
+            }
+
+            .auto-repost-title{
+                @include font-style(14px, 600, #4d493c);
+                @media (min-width: 768px){
+                    font-size: 20px;
+                }
+            }
+
+            .how-many-time-box{
+                @include widget-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 30px 10px;
+                @media (min-width: 768px){
+                    padding: 40px 30px;
+                }
+
+                .time-repeated-title{
+                    @include font-style(18px, 700, #787978);
+                    @media (min-width: 768px){
+                        font-size: 30px;
+                    }
+                }
+
+                .price{
+                    @include font-style(12px, 600, #787978);
+                    @media (min-width: 768px){
+                        font-size: 18px;
+                    }
+
+                    .badge{
+                        background-color: #ee6253;
+                    }
+                }
+            }
+
+            .what-time-box{
+                @include widget-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 0.5rem;
+                min-height: 40px;
+                white-space: nowrap;
+                @include font-style(14px, 600, #737574);
+                @media (min-width: 768px){
+                    font-size: 22px;
+                    min-height: 65px;
+                }
+
+                .delete-btn {
+                    color: #d0d2d0;
+                    padding-left: 5px;
+                    @media (min-width: 768px){
+                        padding-left: 15px;
+                    }
+                }
+            }
+
+            .card-footer{
+                background-color: $color-white;
+                border-top: 1px solid #dbdcd7;
+
+                .day-select-box{
+                    @include widget-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 0.5rem;
+                    min-height: 35px;
+                    white-space: nowrap;
+                    @include font-style(12px, 600, #737574);
+                    @media (min-width: 768px){
+                        font-size: 20px;
+                        min-height: 55px;
+                    }
+
+                    &.remove-btn{
+                        border-color: $color-cyan;
+                        border-top-width: 1px;
+                        border-bottom-width: 5px;
+                        box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.2);
+                    }
+                }
+
+                .auto-repost-summary{
+                    @include font-style(12px, 400, #525254);
+                    text-align: center;
+                    @media (min-width: 768px){
+                        font-size: 18px;
+                    }
+                    strong{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        //############# End of auto-repost #############
+
+
+
+         //############# bumps start #############
+         &.bumps {
+             .bumps-title{
+                @include font-style(14px, 600, #525254);
+                @media (min-width: 768px){
+                    font-size: 20px;
+                }
+             }
+
+             .table > :not(caption) > * > *{
+                @media (max-width: 767px){
+                    padding: 0.25rem;
+                }
+             }
+
+             .bump-item{
+                @include widget-box;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                white-space: nowrap;
+                min-height: 70px;
+                padding: 0.25em;
+                @media (min-width: 768px){
+                    min-height: 110px;
+                    padding: 0.0rem;
+                }
+
+                .bump-name{
+                    @include font-style(12px, 600, #525254);
+                    @media (min-width: 768px){
+                        font-size: 18px;
+                    }
+                }
+
+                .bump-price{
+                    @include font-style(10px, 400, #525254);
+                    @media (min-width: 768px){
+                        font-size: 16px;
+                    }
+                    del{
+                        @include font-style(7.5px, 400, #dad8d2);
+                        text-decoration: line-through;
+                        text-decoration-color: #ee6253;
+                        @media (min-width: 768px){
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .offer-badge{
+                    @include font-style(7.5px, 600, $color-white);
+                    padding: 2px 10px;
+                    width: 90%;
+                    display: inline-block;
+                    margin: 0 auto ;
+                    background-color: #ee6253;
+                    @media (min-width: 768px){
+                        font-size: 12px;
+                        padding: 2px 30px;
+                    }
+                }
+
+                .delete-btn{
+                    @extend .bump-price;
+                    padding: 1rem;
+                }
+
+             }
+
+             .card-footer {
+                 background: #fff296;
+                 border-top: 1px solid #ecd63b;
+             }
+         }
+        //############# End of bumps #############
+
     }
 }
 
-.Rounded_Rectangle_7 {
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.13);
-    position: absolute;
-    left: 303px;
-    top: 686px;
-    width: 42px;
-    height: 38px;
-    z-index: 128;
-  }
   

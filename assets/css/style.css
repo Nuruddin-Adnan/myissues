@@ -70,12 +70,20 @@ body {
   background-color: #f5f9fa;
 }
 
+.bg-cyan {
+  background-color: #006f85;
+}
+
 .border-radius-0 {
   border-radius: 0;
 }
 
 .text-cyan {
   color: #006f85;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 
 /*===// end of base css === */
@@ -898,6 +906,7 @@ body {
 @media (max-width: 767px) {
   .top-pagination .pagination .page-item .page-link {
     padding: 0.5rem;
+    padding-right: 0;
   }
 }
 
@@ -1647,6 +1656,12 @@ body {
   color: #7d7d7d;
 }
 
+@media (min-width: 768px) {
+  .next-prev-btn .btn {
+    font-size: 55px;
+  }
+}
+
 .next-prev-btn .error-message-btn {
   background-color: #c85128;
   padding: 5px 10px;
@@ -1932,20 +1947,324 @@ body {
   color: #006f85;
 }
 
-.Rounded_Rectangle_7 {
+.add-setting--card.auto-repost .top-heading {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4d493c;
+  line-height: 19px;
+  background: rgba(118, 189, 93, 0.2);
+}
+
+.add-setting--card.auto-repost .top-heading .text-green {
+  color: #76bd5d;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.auto-repost .top-heading {
+    font-size: 20px;
+  }
+}
+
+.add-setting--card.auto-repost .auto-repost-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4d493c;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.auto-repost .auto-repost-title {
+    font-size: 20px;
+  }
+}
+
+.add-setting--card.auto-repost .how-many-time-box {
+  height: 100%;
+  background: #fafbf6;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid #e3e3e3;
   border-radius: 5px;
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.13);
-          box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.13);
-  position: absolute;
-  left: 303px;
-  top: 686px;
-  width: 42px;
-  height: 38px;
-  z-index: 128;
+  border-top-width: 5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.auto-repost .how-many-time-box {
+    padding: 40px 30px;
+  }
+}
+
+.add-setting--card.auto-repost .how-many-time-box .time-repeated-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #787978;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.auto-repost .how-many-time-box .time-repeated-title {
+    font-size: 30px;
+  }
+}
+
+.add-setting--card.auto-repost .how-many-time-box .price {
+  font-size: 12px;
+  font-weight: 600;
+  color: #787978;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.auto-repost .how-many-time-box .price {
+    font-size: 18px;
+  }
+}
+
+.add-setting--card.auto-repost .how-many-time-box .price .badge {
+  background-color: #ee6253;
+}
+
+.add-setting--card.auto-repost .what-time-box {
+  height: 100%;
+  background: #fafbf6;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  border-top-width: 5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  min-height: 40px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  color: #737574;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.auto-repost .what-time-box {
+    font-size: 22px;
+    min-height: 65px;
+  }
+}
+
+.add-setting--card.auto-repost .what-time-box .delete-btn {
+  color: #d0d2d0;
+  padding-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.auto-repost .what-time-box .delete-btn {
+    padding-left: 15px;
+  }
+}
+
+.add-setting--card.auto-repost .card-footer {
+  background-color: #fff;
+  border-top: 1px solid #dbdcd7;
+}
+
+.add-setting--card.auto-repost .card-footer .day-select-box {
+  height: 100%;
+  background: #fafbf6;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  border-top-width: 5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  min-height: 35px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+  color: #737574;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.auto-repost .card-footer .day-select-box {
+    font-size: 20px;
+    min-height: 55px;
+  }
+}
+
+.add-setting--card.auto-repost .card-footer .day-select-box.remove-btn {
+  border-color: #006f85;
+  border-top-width: 1px;
+  border-bottom-width: 5px;
+  -webkit-box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5.52px 0.48px rgba(0, 0, 0, 0.2);
+}
+
+.add-setting--card.auto-repost .card-footer .auto-repost-summary {
+  font-size: 12px;
+  font-weight: 400;
+  color: #525254;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.auto-repost .card-footer .auto-repost-summary {
+    font-size: 18px;
+  }
+}
+
+.add-setting--card.auto-repost .card-footer .auto-repost-summary strong {
+  font-weight: 600;
+}
+
+.add-setting--card.bumps .bumps-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #525254;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.bumps .bumps-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .add-setting--card.bumps .table > :not(caption) > * > * {
+    padding: 0.25rem;
+  }
+}
+
+.add-setting--card.bumps .bump-item {
+  height: 100%;
+  background: #fafbf6;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  border-top-width: 5px;
+  text-align: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+  min-height: 70px;
+  padding: 0.25em;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.bumps .bump-item {
+    min-height: 110px;
+    padding: 0.0rem;
+  }
+}
+
+.add-setting--card.bumps .bump-item .bump-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #525254;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.bumps .bump-item .bump-name {
+    font-size: 18px;
+  }
+}
+
+.add-setting--card.bumps .bump-item .bump-price, .add-setting--card.bumps .bump-item .delete-btn {
+  font-size: 10px;
+  font-weight: 400;
+  color: #525254;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.bumps .bump-item .bump-price, .add-setting--card.bumps .bump-item .delete-btn {
+    font-size: 16px;
+  }
+}
+
+.add-setting--card.bumps .bump-item .bump-price del, .add-setting--card.bumps .bump-item .delete-btn del {
+  font-size: 7.5px;
+  font-weight: 400;
+  color: #dad8d2;
+  text-decoration: line-through;
+  -webkit-text-decoration-color: #ee6253;
+          text-decoration-color: #ee6253;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.bumps .bump-item .bump-price del, .add-setting--card.bumps .bump-item .delete-btn del {
+    font-size: 12px;
+  }
+}
+
+.add-setting--card.bumps .bump-item .offer-badge {
+  font-size: 7.5px;
+  font-weight: 600;
+  color: #fff;
+  padding: 2px 10px;
+  width: 90%;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #ee6253;
+}
+
+@media (min-width: 768px) {
+  .add-setting--card.bumps .bump-item .offer-badge {
+    font-size: 12px;
+    padding: 2px 30px;
+  }
+}
+
+.add-setting--card.bumps .bump-item .delete-btn {
+  padding: 1rem;
+}
+
+.add-setting--card.bumps .card-footer {
+  background: #fff296;
+  border-top: 1px solid #ecd63b;
 }
 
 /*===// end of components css === */
-/*=== pages start === */
-/*===// end of pages  === */
 /*# sourceMappingURL=style.css.map */

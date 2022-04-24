@@ -13,6 +13,11 @@
     background-color: #f5f9fa;
 }
 
+// background
+.bg-cyan {
+    background-color: $color-cyan;
+}
+
 
 // border-radius
 .border-radius-0 {
@@ -23,4 +28,10 @@
 // color
 .text-cyan {
     color: $color-cyan;
+}
+
+
+// font-weight
+.fw-600{
+    font-weight: 600;
 }
