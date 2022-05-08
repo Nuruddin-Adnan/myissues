@@ -1,3 +1,5 @@
+"use strict";
+
 // top action slide swiper js
 let swiperTopAction = new Swiper(".top-action-slide", {
     navigation: {
@@ -7,7 +9,7 @@ let swiperTopAction = new Swiper(".top-action-slide", {
 });
 
 // post banner
-var swiper = new Swiper(".post-details-banner", {
+let swiper = new Swiper(".post-details-banner", {
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -18,3 +20,4 @@ var swiper = new Swiper(".post-details-banner", {
         type: 'fraction',
     },
 });
+

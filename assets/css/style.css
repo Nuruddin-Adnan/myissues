@@ -21,6 +21,7 @@
 @import url(../abstracts/_mixins.scss);
 @import url(../abstracts/_mixins.scss);
 @import url(../abstracts/_mixins.scss);
+@import url(../abstracts/_mixins.scss);
 * {
   margin: 0;
   padding: 0;
@@ -80,6 +81,14 @@ body {
 
 .text-cyan {
   color: #006f85;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-pink {
+  color: #962582;
 }
 
 .fw-600 {
@@ -248,6 +257,33 @@ body {
 .btn-cyan:hover {
   background-color: #005a6c;
   color: #fff;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip-inner {
+  text-align: left;
+  max-width: 300px;
+  background-color: #404145;
+  padding: 0.5rem;
+}
+
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before, .bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #404145;
+}
+
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before, .bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #404145;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #404145;
+}
+
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #404145;
 }
 
 .filter {
@@ -2267,4 +2303,226 @@ body {
 }
 
 /*===// end of components css === */
+/*=== pages css start === */
+.payment-pagination .page-item .page-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #006f85;
+  background-color: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.payment-pagination .page-item .page-link i {
+  font-size: 24px;
+  padding-right: 5px;
+}
+
+.payment-pagination .page-item .page-link .arrow {
+  color: #606060;
+}
+
+@media (min-width: 768px) {
+  .payment-pagination .page-item .page-link {
+    font-size: 26px;
+    white-space: nowrap;
+    padding: .75rem;
+  }
+  .payment-pagination .page-item .page-link i {
+    font-size: 40px;
+  }
+}
+
+.payment-profile .user-profile .profile-img-box .profile-img {
+  width: 100%;
+  height: 100%;
+  min-width: 150px;
+  max-width: 245px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .payment-profile .user-profile .profile-img-box .profile-img {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+.payment-profile .user-profile .profile-info p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #606060;
+}
+
+@media (min-width: 768px) {
+  .payment-profile .user-profile .profile-info p {
+    font-size: 26px;
+  }
+}
+
+.payment-profile .ongoing-support {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+@media (min-width: 768px) {
+  .payment-profile .ongoing-support {
+    font-size: 26px;
+  }
+}
+
+.payment-option {
+  background: #f4f2f2;
+}
+
+.payment-option label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #626468;
+}
+
+@media (min-width: 768px) {
+  .payment-option label {
+    font-size: 22px;
+  }
+}
+
+.payment-option .form-control {
+  font-size: 16px;
+  font-weight: 400;
+  color: #626468;
+}
+
+@media (min-width: 768px) {
+  .payment-option .form-control {
+    font-size: 20px;
+  }
+}
+
+.payment-option .form-check-input:checked {
+  background-color: #006f85;
+  border-color: #006f85;
+}
+
+.payment-option .heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #626468;
+}
+
+.payment-option .heading label {
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .payment-option .heading {
+    font-size: 26px;
+  }
+}
+
+.payment-option #payment-accordion .accordion-item {
+  background-color: transparent;
+}
+
+.payment-option #payment-accordion .accordion-item .accordion-header {
+  background-color: #faf9f9;
+}
+
+.payment-summary .promocode-text, .payment-summary .service-fee-text {
+  cursor: pointer;
+}
+
+.payment-summary .promocode-text i, .payment-summary .service-fee-text i {
+  color: #4a4a4a;
+}
+
+.payment-summary .promocode-text, .payment-summary .service-fee-text,
+.payment-summary .service-fee-amount {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+@media (min-width: 768px) {
+  .payment-summary .promocode-text, .payment-summary .service-fee-text,
+  .payment-summary .service-fee-amount {
+    font-size: 26px;
+  }
+}
+
+.payment-summary .total-amount {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a4a4a;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .payment-summary .total-amount {
+    font-size: 26px;
+  }
+}
+
+.payment-summary .ssl-secure {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+@media (min-width: 768px) {
+  .payment-summary .ssl-secure {
+    font-size: 24px;
+  }
+}
+
+.payment-summary .total-charge {
+  font-size: 16px;
+  font-weight: 400;
+  color: #626468;
+}
+
+@media (min-width: 768px) {
+  .payment-summary .total-charge {
+    font-size: 24px;
+  }
+}
+
+.payment-summary .btn-cyan {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .payment-summary .btn-cyan {
+    font-size: 26px;
+  }
+}
+
+.payment-method-footer {
+  font-size: 14px;
+  font-weight: 400;
+  color: #626468;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .payment-method-footer {
+    font-size: 21px;
+  }
+}
+
+.payment-method-footer a:hover {
+  color: #962582;
+}
+
+/*===// end of pages css === */
 /*# sourceMappingURL=style.css.map */

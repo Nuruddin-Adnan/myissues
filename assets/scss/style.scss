@@ -20,6 +20,7 @@
 
 /*=== components css start === */
 @import 'components/buttons';
+@import 'components/tooltip';
 @import 'components/filter';
 @import 'components/sponsore';
 @import 'components/card-item';
@@ -44,3 +45,8 @@
 @import 'components/add-setting';
 
 /*===// end of components css === */
+
+
+/*=== pages css start === */
+@import 'pages/payment';
+/*===// end of pages css === */
