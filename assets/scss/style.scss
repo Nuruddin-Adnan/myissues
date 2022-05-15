@@ -14,6 +14,7 @@
 
 /*=== layouts css start === */
 @import 'layouts/navbar';
+@import 'layouts/blog-header';
 @import 'layouts/footer';
 /*===// end of layouts css === */
 
@@ -44,9 +45,16 @@
 // add setting
 @import 'components/add-setting';
 
+// blog component
+@import 'components/blog-component/blog-banner';
+@import 'components/blog-component/blog-info';
+@import 'components/blog-component/blog-navigation';
+@import 'components/blog-component/blog-article-heading';
+
 /*===// end of components css === */
 
 
 /*=== pages css start === */
 @import 'pages/payment';
+@import 'pages/blog/home';
 /*===// end of pages css === */

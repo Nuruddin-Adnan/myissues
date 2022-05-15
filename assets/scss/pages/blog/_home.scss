@@ -1,0 +1,36 @@
+.blog-home {
+    &.post-your-blog {
+        .title {
+            @include font-style(22px, 500, $color-cyan);
+            @media (max-width: 767px) {
+                font-size: 18px;                
+            }
+        }
+        .info {
+            @include font-style(16px, 300, $color-cyan);
+            margin: 5px 0 10px 0;
+            @media (max-width: 767px) {
+                font-size: 14px;                
+            }
+        }
+        .description {
+            @include font-style(18px, 300, #231d19);
+            margin-bottom: 20px;
+            @media (max-width: 767px) {
+                font-size: 16px;                
+            }
+        }
+        .post-blog-btn {
+            background: #ffb734;
+            text-transform: uppercase;
+            @include font-style(20px, 400, $color-white);
+            border-radius: 0;
+            color: $color-white;
+            transition: all 0.2s linear;
+
+            &:hover {
+                background: darken(#ffb734, 5);
+            }
+        }
+    }
+}
