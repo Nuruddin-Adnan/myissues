@@ -12,6 +12,13 @@
                     border-bottom: 3px solid $color-cyan;
                 }
             }
+            
+            .dropdown-menu .dropdown-item {
+                &.active {
+                    color: $color-white;
+                    background: $color-cyan;
+                }
+            }
         }
     }
 }
