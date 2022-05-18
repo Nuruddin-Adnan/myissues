@@ -28,8 +28,5 @@
 
     .fa-check-circle {
         @include font-style(24px, 700, #606060);
-        // @media (max-width: 767px){
-        //     font-size: 20px;
-        //  }
     }
 }
