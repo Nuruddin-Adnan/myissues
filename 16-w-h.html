@@ -7,8 +7,8 @@
   <title>myissues-16-w-h</title>
   <link rel='shortcut icon' href='assets/images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/slick/css/slick.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-light-gray">
@@ -51,35 +51,21 @@
   <!-- === top-action section start === -->
   <section class="top-action">
     <div class="container-fluid">
-      <div class="d-flex align-items-center">
-        <a href="#" class="btn border-end"><i class="fas fa-bars"></i></a>
-        <div class="swiper top-action-slide">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="text">
-                <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
-                <p class="sub-title">1000 -pamela- City of Durham Region</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="text">
-                <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
-                <p class="sub-title">1000 -pamela- City of Durham Region</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="text">
-                <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
-                <p class="sub-title">1000 -pamela- City of Durham Region</p>
-              </div>
-            </div>
+      <a href="#" class="btn border-end"><i class="fas fa-bars"></i></a>
+      <div class="owl-carousel top-action-slide">
+        <!-- Slides -->
+          <div class="text">
+            <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
+            <p class="sub-title">1000 -pamela- City of Durham Region</p>
           </div>
-        </div>
-        <!-- If we need navigation buttons -->
-        <button type="button" class="btn button-prev border-start"><i class="fas fa-arrow-left"></i></button>
-        <button type="button" class="btn button-next border-start"><i class="fas fa-arrow-right"></i></button>
+          <div class="text">
+            <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
+            <p class="sub-title">1000 -pamela- City of Durham Region</p>
+          </div>
+          <div class="text">
+            <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
+            <p class="sub-title">1000 -pamela- City of Durham Region</p>
+          </div>
       </div>
     </div>
   </section>
@@ -89,23 +75,21 @@
   <section class="post-details">
     <div class="container-fluid">
       <div class="banner">
-        <div class="swiper post-details-banner">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+        <div class="post-details-banner">
+          <div class="post-details-slider">
+            <div class="post-details-slide-items">
               <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
             </div>
-            <div class="swiper-slide">
+            <div class="post-details-slide-items">
               <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
             </div>
-            <div class="swiper-slide">
+            <div class="post-details-slide-items">
               <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
             </div>
-            <div class="swiper-slide">
+            <div class="post-details-slide-items">
               <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
           <!-- Add Pagination -->
           <div class="pagination align-items-center">
             <i class="fas fa-images pe-2"></i> <span class="custom-pagination"></span>
@@ -361,9 +345,11 @@
  
 
 
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/popper.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/slick/js/slick.min.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
 </html>
+

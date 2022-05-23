@@ -14,6 +14,12 @@
         }
         &.border-end {
             border-right: 1px solid #5f605d !important;
+            float: left;
+            position: relative;
+            z-index: 2;
+            @media (min-width: 768px){
+                line-height: 2;
+            }
         }
         &.border-start {
             border-left: 1px solid #5f605d !important;
@@ -25,7 +31,8 @@
     }
 
     .text {
-        padding: 10px 20px;
+        padding: 10px 20px; 
+        padding-right: 150px;
         .title {
             @include font-style(16px, 700, #343432);
             display: -webkit-box;
@@ -45,6 +52,7 @@
     @media (min-width: 768px){
         .text{
             padding: 20px 30px;
+            padding-right: 190px;
             .title {
                 font-size: 22px;
             }
@@ -52,5 +60,18 @@
                 font-size: 16px;
             }
         }
+    }
+
+    .button-next,
+    .button-prev {
+        background: #f5f9fa;
+        position: absolute;
+        right: 57px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    .button-next {
+        right: 0px;
     }
 }

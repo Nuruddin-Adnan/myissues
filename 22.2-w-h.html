@@ -7,8 +7,8 @@
   <title>myissues 22.2-w-h</title>
   <link rel='shortcut icon' href='assets/images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/slick/css/slick.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-light-gray">
@@ -237,160 +237,144 @@
             <!-- === top-action section start === -->
             <section class="top-action">
               <div class="container-fluid">
-                <div class="d-flex align-items-center">
-                  <a href="#" class="btn border-end"><i class="fas fa-bars"></i></a>
-                  <div class="swiper top-action-slide">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide">
-                        <div class="text">
-                          <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
-                          <p class="sub-title">1000 -pamela- City of Durham Region</p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="text">
-                          <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
-                          <p class="sub-title">1000 -pamela- City of Durham Region</p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="text">
-                          <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
-                          <p class="sub-title">1000 -pamela- City of Durham Region</p>
-                        </div>
-                      </div>
+                <a href="#" class="btn border-end"><i class="fas fa-bars"></i></a>
+                <div class="top-action-slide">
+                  <!-- Slides -->
+                    <div class="text">
+                      <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
+                      <p class="sub-title">1000 -pamela- City of Durham Region</p>
                     </div>
-                  </div>
-                  <!-- If we need navigation buttons -->
-                  <button type="button" class="btn button-prev border-start"><i class="fas fa-arrow-left"></i></button>
-                  <button type="button" class="btn button-next border-start"><i class="fas fa-arrow-right"></i></button>
+                    <div class="text">
+                      <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
+                      <p class="sub-title">1000 -pamela- City of Durham Region</p>
+                    </div>
+                    <div class="text">
+                      <h3 class="title">I AM KEEPING AN EVENTS TO SUPPORT OF COVID.....</h3>
+                      <p class="sub-title">1000 -pamela- City of Durham Region</p>
+                    </div>
                 </div>
               </div>
             </section>
             <!-- ===//end of top-action section === -->
           
-            <!-- === post-details section start === -->
-            <section class="post-details">
-              <div class="container-fluid">
-                <div class="banner">
-                  <div class="swiper post-details-banner">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
+              <!-- === post-details section start === -->
+              <section class="post-details">
+                <div class="container-fluid">
+                  <div class="banner">
+                    <div class="post-details-banner">
+                      <div class="post-details-slider">
+                        <div class="post-details-slide-items">
+                          <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
+                        </div>
+                        <div class="post-details-slide-items">
+                          <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
+                        </div>
+                        <div class="post-details-slide-items">
+                          <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
+                        </div>
+                        <div class="post-details-slide-items">
+                          <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
+                        </div>
                       </div>
-                      <div class="swiper-slide">
-                        <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
+                      <!-- Add Pagination -->
+                      <div class="pagination align-items-center">
+                        <i class="fas fa-images pe-2"></i> <span class="custom-pagination"></span>
                       </div>
-                      <div class="swiper-slide">
-                        <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="assets/images/slider/Image.png" alt="slider" class="w-100">
-                      </div>
+                      <!-- user icon -->
+                      <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <!-- Add Pagination -->
-                    <div class="pagination align-items-center">
-                      <i class="fas fa-images pe-2"></i> <span class="custom-pagination"></span>
-                    </div>
-                    <!-- user icon -->
-                    <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
                   </div>
-                </div>
 
-                <div class="d-flex video-picture mt-sm-5 mt-4">
-                  <div class="video">
+                  <div class="d-flex video-picture mt-sm-5 mt-4">
+                    <div class="video">
+                      <div class="card">
+                        <h2 class="heading"><i class="fas fa-video"></i> Video</h2>
+                        <a href="#" class="d-block position-relative">
+                          <img src="assets/images/video-picture/video-picture.png" alt="video" class="w-100">
+                          <i class="fab fa-youtube fs-1 text-white position-absolute top-50 start-50 translate-middle"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="picture">
+                      <div class="card px-sm-4">
+                        <h2 class="heading"><i class="fas fa-images pe-2"></i> Pictures</h2>
+                        <div class="row g-sm-4 g-2">
+                          <div class="col-3">
+                            <a href="#">
+                              <img src="assets/images/card-h-placeholder.png" alt="picture" class="w-100">
+                            </a>
+                          </div>
+                          <div class="col-3">
+                            <a href="#">
+                              <img src="assets/images/card-h-placeholder.png" alt="picture" class="w-100">
+                            </a>
+                          </div>
+                          <div class="col-3">
+                            <a href="#">
+                              <img src="assets/images/card-h-placeholder.png" alt="picture" class="w-100">
+                            </a>
+                          </div>
+                          <div class="col-3">
+                            <a href="#">
+                              <img src="assets/images/video-picture/picture.png" alt="picture" class="w-100">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="profile mt-sm-5 mt-4">
                     <div class="card">
-                      <h2 class="heading"><i class="fas fa-video"></i> Video</h2>
-                      <a href="#" class="d-block position-relative">
-                        <img src="assets/images/video-picture/video-picture.png" alt="video" class="w-100">
-                        <i class="fab fa-youtube fs-1 text-white position-absolute top-50 start-50 translate-middle"></i>
-                      </a>
+                      <div class="card-body p-md-4">
+                        <div class="profile-info">
+                          <div class="row gy-sm-4 gy-3">
+                            <div class="col-12">
+                              <label>Profile ID</label>
+                              <h2 class="text-pink">PR100</h2>
+                            </div>
+                            <div class="col-6">
+                              <label>Name </label>
+                              <h2>Molly/ Lulu</h2>
+                            </div>
+                            <div class="col-6">
+                              <label>Age</label>
+                              <h2>32</h2>
+                            </div>
+                            <div class="col-12">
+                              <label>City</label>
+                              <h2>Kamioops</h2>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-sm-5 mt-4 g-sm-3 g-2 pb-4">
+                          <div class="col-6">
+                            <a href="#" class="btn btn-warning"><i class="fas fa-hand-holding-usd"></i> Donate Now!</a>
+                          </div>
+                          <div class="col-6">
+                            <a href="#" class="btn btn-info"><i class="fas fa-share-all"></i> Share</a>
+                          </div>
+                          <div class="col-6">
+                            <a href="#" class="btn btn-light"><i class="fas fa-heart"></i> Fovorite</a>
+                          </div>
+                          <div class="col-6">
+                            <a href="#" class="btn btn-light"><i class="fas fa-flag"></i> Report This Ad</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="picture">
-                    <div class="card px-sm-4">
-                      <h2 class="heading"><i class="fas fa-images pe-2"></i> Pictures</h2>
-                      <div class="row g-sm-4 g-2">
-                        <div class="col-3">
-                          <a href="#">
-                            <img src="assets/images/card-h-placeholder.png" alt="picture" class="w-100">
-                          </a>
-                        </div>
-                        <div class="col-3">
-                          <a href="#">
-                            <img src="assets/images/card-h-placeholder.png" alt="picture" class="w-100">
-                          </a>
-                        </div>
-                        <div class="col-3">
-                          <a href="#">
-                            <img src="assets/images/card-h-placeholder.png" alt="picture" class="w-100">
-                          </a>
-                        </div>
-                        <div class="col-3">
-                          <a href="#">
-                            <img src="assets/images/video-picture/picture.png" alt="picture" class="w-100">
-                          </a>
-                        </div>
+                    <div class="card profile-description my-sm-5 my-4 pb-4">
+                      <div class="card-body p-md-4">
+                        <h2 class="title">I HAVE BEEN HOMELESS FOR 3 YEARS AND IT'S HARD TO FIND A PLASE HELP ME.</h2>
+                        <p class="description my-4 my-sm-5">Hi... :) i love to laugh and have fun with decent gentlemen. my priority is a good attitue towards people. i love to talk and have a good time. 
+                          i would</p>
+                        <a href="#" class="btn btn-light">See Full Description</a>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="profile mt-sm-5 mt-4">
-                  <div class="card">
-                    <div class="card-body p-md-4">
-                      <div class="profile-info">
-                        <div class="row gy-sm-4 gy-3">
-                          <div class="col-12">
-                            <label>Profile ID</label>
-                            <h2 class="text-pink">PR100</h2>
-                          </div>
-                          <div class="col-6">
-                            <label>Name </label>
-                            <h2>Molly/ Lulu</h2>
-                          </div>
-                          <div class="col-6">
-                            <label>Age</label>
-                            <h2>32</h2>
-                          </div>
-                          <div class="col-12">
-                            <label>City</label>
-                            <h2>Kamioops</h2>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mt-sm-5 mt-4 g-sm-3 g-2 pb-4">
-                        <div class="col-6">
-                          <a href="#" class="btn btn-warning"><i class="fas fa-hand-holding-usd"></i> Donate Now!</a>
-                        </div>
-                        <div class="col-6">
-                          <a href="#" class="btn btn-info"><i class="fas fa-share-all"></i> Share</a>
-                        </div>
-                        <div class="col-6">
-                          <a href="#" class="btn btn-light"><i class="fas fa-heart"></i> Fovorite</a>
-                        </div>
-                        <div class="col-6">
-                          <a href="#" class="btn btn-light"><i class="fas fa-flag"></i> Report This Ad</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card profile-description my-sm-5 my-4 pb-4">
-                    <div class="card-body p-md-4">
-                      <h2 class="title">I HAVE BEEN HOMELESS FOR 3 YEARS AND IT'S HARD TO FIND A PLASE HELP ME.</h2>
-                      <p class="description my-4 my-sm-5">Hi... :) i love to laugh and have fun with decent gentlemen. my priority is a good attitue towards people. i love to talk and have a good time. 
-                        i would</p>
-                      <a href="#" class="btn btn-light">See Full Description</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- ===//end of post-details section === -->
+              </section>
+              <!-- ===//end of post-details section === -->
 
             <!-- === organizer-location section start === -->
             <section class="organizer-location mb-5">
@@ -416,9 +400,10 @@
  
 
 
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/popper.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/slick/js/slick.min.js"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
